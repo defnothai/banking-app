@@ -1,6 +1,6 @@
 services:
   accounts:
-    image: "haidev257/accounts:s4"
+    image: "haidev257/account:0.0.1-SNAPSHOT"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -11,7 +11,7 @@ services:
     networks:
       - haibank
   loans:
-    image: "haidev257/loans:s4"
+    image: "haidev257/loan:0.0.1-SNAPSHOT"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -22,7 +22,7 @@ services:
     networks:
       - haibank
   cards:
-    image: "haidev257/cards:s4"
+    image: "haidev257/card:0.0.1-SNAPSHOT"
     container_name: cards-ms
     ports:
       - "9000:9000"
